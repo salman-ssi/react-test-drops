@@ -1,0 +1,39 @@
+{
+    "env": {
+        "node": true,
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "no-irregular-whitespace": "error",
+        "no-duplicate-imports": "error",
+        "no-console": "warn",
+        "no-useless-call": "error",
+        "no-eq-null": "error",
+        "react/prop-types": "off",
+        "import/prefer-default-export": "off",
+        "import/no-cycle": "off",
+        "no-multi-assign": "off",
+        "no-unused-vars": "warn",
+        "react-in-jsx-scope": "off"
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {}
+        },
+        "react": {
+            "version": "latest"
+        }
+    },
+    "plugins": ["import"]
+}
